@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Palencia - Final Project</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Dosis&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+
+    <script src="home.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-links">
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>✦
+                <li><a href="interests.html">Interests</a></li>✦
+                <li><a href="bts.html">BTS</a></li>✦
+                <li><a href="cheatsheet.html">Cheat sheet</a></li>
+            </ul>
+        </div>
+
+        <!-- Photo, name, and course -->
+        <div class="profile-section">
+            <img src="./images/profile_pic.jpg" alt="Profile Picture" class="profile-photo">
+            <p id="name">Corazon Marie Palencia</p>
+            <p id="course">Software Development</p>
+        </div>
+
+        <!-- Dropdowns start here -->
+
+        <div class="info-box dropdown">
+            <div class="dropdown-btn" onclick="toggleDropdown('AboutMe')"> About Me</div>
+            <table id="AboutMe" class="dropdown-content">
+                <tr>
+                    <td><b>Name:</b></td>
+                    <td>&nbsp; Corazon Marie Palencia</td>
+                </tr>
+                <tr>
+                    <td><b>Age:</b></td>
+                    <td>&nbsp; 29</td>
+                </tr>
+                <tr>
+                    <td><b>Student #:</b></td>
+                    <td>&nbsp; 445886</td>
+                </tr>
+                <tr>
+                    <td><b>City:</b></td>
+                    <td>&nbsp; Calgary</td>
+                </tr>
+                <tr>
+                    <td><b>Province:</b></td>
+                    <td>&nbsp; Alberta</td>
+                </tr>
+                <tr>
+                    <td><b>Country:</b></td>
+                    <td>&nbsp; Canada</td>
+                </tr>
+                <tr>
+                    <td><b>Email: </b></td>
+                    <td>&nbsp; c.palencia886@mybvc.ca</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="info-box dropdown">
+            <div class="dropdown-btn" onclick="toggleDropdown('Education')"> Education</div>
+            <p id="Education" class="dropdown-content">
+                <span style="font-weight: bold;">Bow Valley College</span> | <span style="font-size: 80%; color: #808080; font-weight: normal;">Present</span> <br>
+                <span style="font-size: 90%; color: #808080; font-weight: normal;">Software Development Diploma <br>
+                Calgary, Canada</span> <br>
+                <br>
+                <span style="font-weight: bold;">West Visayas State University</span> | <span style="font-size: 80%; color: #808080; font-weight: normal;">2011 - 2015</span> <br>
+                <span style="font-size: 90%; color: #808080; font-weight: normal;">Bachelor of Science in Information Systems <br>
+                Iloilo City, Philippines</span>
+            </p>
+        </div>
+
+        <div class="info-box dropdown">
+            <div class="dropdown-btn" onclick="toggleDropdown('Experience')"> Experience</div>
+            <p id="Experience" class="dropdown-content">
+                <span style="font-weight: bold;">Computer Systems Engineer</span>  | <span style="font-size: 80%; color: #808080; font-weight: normal;">2017 - 2023</span> <br>
+                <span style="font-size: 90%; color: #808080;">Singapore</span> <br>
+                <br>
+                <span style="font-weight: bold;">SAP, Marketing & Sales</span>  | <span style="font-size: 80%; color: #808080; font-weight: normal;">2016 - 2017</span> <br>
+                <span style="font-size: 90%; color: #808080;">Philippines</span>
+            </p>
+        </div>
+
+        <div class="info-box dropdown">
+            <div class="dropdown-btn" onclick="toggleDropdown('TechnicalSkills')"> Technical Skills</div>
+                <table id="TechnicalSkills" class="dropdown-content">
+                    <tr>
+                        <td>✦ Microsoft Office</td>
+                        <td>✦ Adobe Photoshop</td>
+                        <td>✦ Windows Server</td>
+                        <td>✦ HTML</td>
+                        <td>✦ CSS</td>
+                    </tr>
+                    <tr>
+                        <td>✦ PHP</td>
+                        <td>✦ CorelDraw</td>
+                        <td>✦ Canva</td>
+                        <td>✦ Video Editing</td>
+                        <td>✦ SAP</td>
+                    </tr>
+                </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2023. CMDP. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

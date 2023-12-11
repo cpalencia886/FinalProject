@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #e6e6fa;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #f1f1f1;
+            width: 70%;
+            max-width: 800px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .page-links {
+            text-align: center;
+            font-family: 'Carrois Gothic SC', sans-serif;
+        }
+
+        .page-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .page-links li {
+            display: inline-block;
+            margin-right: 10px;
+            text-transform: uppercase;
+        }
+
+        .page-links a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .page-links a:hover {
+            text-decoration: underline;
+            color: #db9cf3;
+        }
+
+        .page-links a.active {
+            color: #db9cf3;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #555;
+            margin-top: 20px;
+            font-family: 'Dosis', sans-serif;
+        }
+
+        h1, p, h4 {
+            font-family: 'Carrois Gothic SC', sans-serif;
+            text-align: center;
+        }
+
+        .cheatsheet {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .cheatsheet div {
+            width: 48%; 
+            margin-bottom: 10px;
+        }
+
+        .copyright-box {
+            background-color: #d4d1d5;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        pre {
+            background-color: #d4d1d5;
+            border-radius: 5px;
+            overflow-x: auto;
+            max-width: 100%;
+            margin: 0; 
+        }
+    </style>
+    <title>Cheatsheet</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-links">
+            <ul>
+                <li><a href="home.html">Home</a></li>✦
+                <li><a href="interests.html">Interests</a></li>✦
+                <li><a href="bts.html">BTS</a></li>✦
+                <li><a href="cheatsheet.html" class="active">Cheat sheet</a></li>
+            </ul>
+        </div>
+
+        <!-- Copyright Box -->
+        <div class="copyright-box">
+            <p><b>Disclaimer</b></p>
+            <p>The <b>photos</b> and <b>audio</b> used on this page are not mine and are sourced from various places.
+                They are used for non-commercial and educational purposes, and no copyright infringement is
+                intended.</p>
+        </div>
+
+        <!-- Cheatsheet Content -->
+        <div class="cheatsheet">
+            <div>
+                <!-- Basic HTML Structure -->
+                <h4>Basic HTML Structure</h4>
+                <pre>
+                    <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Palencia - Cheat Sheet&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+    &lt;/body&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- Linking Styles and Scripts -->
+                <h4>Linking Styles and Scripts</h4>
+                <pre>
+                    <code>
+    <!-- Linking Stylesheet -->
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+
+    <!-- Linking Script -->
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- Creating a Navigation Menu -->
+                <h4>Creating a Navigation Menu</h4>
+                <pre>
+                    <code>
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- Adding Images -->
+                <h4>Adding Images</h4>
+                <pre>
+                    <code>
+    &lt;img src="image.jpg" alt="Description of the image"&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- Creating a Table -->
+                <h4>Creating a Table</h4>
+                <pre>
+                    <code>
+    &lt;table&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Header 1&lt;/th&gt;
+            &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+            &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- h1, h2 h3, abbr -->
+                <h4>Headings and Abbreviation</h4>
+                <pre>
+                    <code>
+    &lt;h1&gt;Heading 1&lt;/h1&gt;
+    &lt;h2&gt;Heading 2&lt;/h2&gt;
+    &lt;h3&gt;Heading 3&lt;/h3&gt;
+    &lt;abbr title="Abbreviation"&gt;ABBR&lt;/abbr&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- Text Box and Button -->
+                <h4>Text Box and Button</h4>
+                <pre>
+                    <code>
+    &lt;input type="text" placeholder="Enter text"&gt;
+    &lt;button&gt;Submit&lt;/button&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- Dropdown (2) -->
+                <h4>Dropdowns</h4>
+                <pre>
+                    <code>
+    &lt;select&gt;
+        &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+        &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+    &lt;/select&gt;
+                    </code>
+                </pre>
+            </div>
+
+            <div>
+                <!-- p, strong, em, u -->
+                <h4>Paragraph, Strong, Emphasis, Underline</h4>
+                <pre>
+                    <code>
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;strong&gt;Strong text&lt;/strong&gt;
+    &lt;em&gt;Emphasized text&lt;/em&gt;
+    &lt;u&gt;Underlined text&lt;/u&gt;
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; 2023. CMDP. All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
