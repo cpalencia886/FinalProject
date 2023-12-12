@@ -58,6 +58,12 @@ body {
 
 /* page template */
 
+.aboutme p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
 .interest-photos {
     display: flex;
     justify-content: center;
