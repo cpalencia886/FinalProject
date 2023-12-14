@@ -62,7 +62,9 @@
             font-family: 'Dosis', sans-serif;
         }
 
-        h1, p, h4 {
+        h1,
+        p,
+        h4 {
             font-family: 'Carrois Gothic SC', sans-serif;
             text-align: center;
         }
@@ -75,8 +77,17 @@
         }
 
         .cheatsheet div {
-            width: 48%; 
-            margin-bottom: 10px;
+            width: 48%;
+           padding-bottom: 5px;
+        }
+
+        .media-container {
+            text-align: left;
+        }
+
+        .media-container pre {
+            padding-left: 30px;
+            padding-right: 30px;
         }
 
         .copyright-box {
@@ -92,7 +103,11 @@
             border-radius: 5px;
             overflow-x: auto;
             max-width: 100%;
-            margin: 0; 
+            margin: 0;
+            max-height: 200px; 
+            overflow-y: auto;
+
+
         }
     </style>
     <title>Cheat sheet</title>
@@ -140,6 +155,7 @@
     &lt;body&gt;
 
     &lt;/body&gt;
+    &lt;/html&gt;
                     </code>
                 </pre>
             </div>
@@ -149,35 +165,52 @@
                 <h4>Linking Styles and Scripts</h4>
                 <pre>
                     <code>
-    <!-- Linking Stylesheet -->
-    &lt;link rel="stylesheet" href="styles.css"&gt;
 
-    <!-- Linking Script -->
-    &lt;script src="script.js"&gt;&lt;/script&gt;
+
+
+    &lt;link rel="stylesheet" href="styles.css"&gt;     <!-- Linking Stylesheet -->
+
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;   <!-- Linking Script -->
+
+
                     </code>
                 </pre>
             </div>
 
             <div>
-                <!-- Creating a Navigation Menu -->
-                <h4>Creating a Navigation Menu</h4>
+                <!-- Page Links -->
+                <h4>Page Links</h4>
                 <pre>
                     <code>
+
+
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
+
+    
                     </code>
                 </pre>
             </div>
 
-            <div>
-                <!-- Adding Images -->
-                <h4>Adding Images</h4>
+            <div class="media-container">
+                <!-- Adding Media -->
+                <h4>Adding Media</h4>
+
                 <pre>
                     <code>
-    &lt;img src="image.jpg" alt="Description of the image"&gt;
+&lt;img src="image.jpg" alt="Description of the image"&gt;
+
+&lt;video width="640" height="360" controls&gt;
+&lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+&lt;source src="audio.mp3" type="audio/mp3"&gt;
+&lt;/audio&gt;
                     </code>
                 </pre>
             </div>
@@ -202,14 +235,20 @@
             </div>
 
             <div>
-                <!-- h1, h2 h3, abbr -->
-                <h4>Headings and Abbreviation</h4>
+                <!-- Headings -->
+                <h4>Headings</h4>
                 <pre>
                     <code>
+
+
     &lt;h1&gt;Heading 1&lt;/h1&gt;
     &lt;h2&gt;Heading 2&lt;/h2&gt;
     &lt;h3&gt;Heading 3&lt;/h3&gt;
-    &lt;abbr title="Abbreviation"&gt;ABBR&lt;/abbr&gt;
+    &lt;h4&gt;Heading 4&lt;/h4&gt;
+    &lt;h5&gt;Heading 5&lt;/h5&gt;
+    &lt;h6&gt;Heading 6&lt;/h6&gt;
+
+
                     </code>
                 </pre>
             </div>
@@ -220,7 +259,10 @@
                 <pre>
                     <code>
     &lt;input type="text" placeholder="Enter text"&gt;
-    &lt;button&gt;Submit&lt;/button&gt;
+
+        &lt;button&gt;Submit&lt;/button&gt;
+
+    &lt;input type="checkbox" id="checkbox" name="checkbox"&gt;
                     </code>
                 </pre>
             </div>
@@ -233,6 +275,7 @@
     &lt;select&gt;
         &lt;option value="option1"&gt;Option 1&lt;/option&gt;
         &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+        &lt;option value="option3"&gt;Option 3&lt;/option&gt;
     &lt;/select&gt;
                     </code>
                 </pre>
@@ -240,16 +283,67 @@
 
             <div>
                 <!-- p, strong, em, u -->
-                <h4>Paragraph, Strong, Emphasis, Underline</h4>
+                <h4>Text Styles</h4>
                 <pre>
                     <code>
-    &lt;p&gt;This is a paragraph.&lt;/p&gt;
-    &lt;strong&gt;Strong text&lt;/strong&gt;
-    &lt;em&gt;Emphasized text&lt;/em&gt;
-    &lt;u&gt;Underlined text&lt;/u&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt; 
+
+        &lt;strong&gt;Strong text&lt;/strong&gt;
+
+    &lt;em&gt;Emphasized text&lt;/em&gt; 
+
+        &lt;u&gt;Underlined text&lt;/u&gt; 
+
+    &lt;span&gt;This is a span element&lt;/span&gt; 
+
+        &lt;abbr title="Abbreviation"&gt;ABBR&lt;/abbr&gt; 
+
+    &lt;s&gt;Strikethrough Text&lt;/s&gt; 
+
+        &lt;sub&gt;Subscript&lt;/sub&gt; 
+
+    &lt;sup&gt;Superscript&lt;/sup&gt; 
                     </code>
                 </pre>
             </div>
+
+            <div>
+                <!-- Cointainers -->
+                <h4>Cointainers</h4>
+                <pre>
+                    <code>
+        &lt;div&gt;This is a division&lt;/div&gt;
+        
+        &lt;nav&gt;
+            &lt;a href="#home"&gt;Home&lt;/a&gt;
+        &lt;/nav&gt;
+        
+        &lt;section&gt;
+            &lt;h2&gt;Section Title&lt;/h2&gt;
+            &lt;p&gt;Content within the section.&lt;/p&gt;
+        &lt;/section&gt;
+                    </code>
+                </pre>
+            </div>
+        
+            <div>
+                <!-- Form -->
+                <h4>Form Elements</h4>
+                <pre>
+                    <code>
+    &lt;form action="/submit" method="post"&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;
+        
+    &lt;fieldset&gt;
+    &lt;legend&gt;Account Information&lt;/legend&gt;
+    &lt;/fieldset&gt;
+        
+    &lt;/form&gt;
+                    </code>
+                </pre>
+            </div>
+
         </div>
 
         <!-- Footer -->
